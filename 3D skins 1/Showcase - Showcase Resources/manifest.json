@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Showcase Resources",
+    "description": "Showcase proof of concepts on Minecraft",
+    "uuid": "10382c88-fc67-4541-8760-6820fc6c3a25",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Resources for Showcase",
+      "type": "resources",
+      "uuid": "0048e1c1-48bb-4092-a83c-46182692ee7e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

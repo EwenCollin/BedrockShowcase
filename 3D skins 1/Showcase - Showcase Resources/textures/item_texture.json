@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "spawn_egg_rideable_iron_golem": {
+            "textures": "textures/spawn_eggs/rideable_iron_golem"
+        },
+        "spawn_egg_rideable_skin_sotshi": {
+            "textures": "textures/spawn_eggs/rideable_skin_sotshi"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Showcase Behaviors",
+    "description": "Showcase proof of concepts on Minecraft",
+    "uuid": "bb09171f-5cc5-4a04-b3a4-41772725111b",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "behaviours for Showcase",
+      "type": "data",
+      "uuid": "6ac0d04a-70f9-4188-9d13-9d97e8098dbb",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "10382c88-fc67-4541-8760-6820fc6c3a25",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
