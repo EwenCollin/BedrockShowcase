@@ -1,0 +1,111 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "ewen:walking_house",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {},
+        "events": {},
+        "components": {
+            "minecraft:movement.basic": {
+                "max_turn": 360,
+                "value": {
+                    "range_min": 0.05,
+                    "range_max": 3.0
+                }
+            },
+            "minecraft:movement": {
+                "value": {
+                    "range_min": 0.05,
+                    "range_max": 3.0
+                }
+            },
+            "minecraft:is_saddled": {},
+            "minecraft:input_ground_controlled": {},
+            "minecraft:can_power_jump": {},
+            "minecraft:behavior.player_ride_tamed": {},
+            "minecraft:jump.static": {},
+            "minecraft:horse.jump_strength": {
+                "value": {
+                    "range_min": 1.0,
+                    "range_max": 7.0
+                }
+            },
+            "minecraft:buoyant": {
+                "apply_gravity": true,
+                "base_buoyancy": 0.0,
+                "simulate_waves": true,
+                "big_wave_probability": 0.03,
+                "big_wave_speed": 10.0,
+                "drag_down_on_buoyancy_removed": 0,
+                "liquid_blocks": ["water"]
+            },
+            "minecraft:underwater_movement": {
+                "value": 5
+            },
+            "minecraft:rail_movement": {
+                "max_speed": 4.0
+            },
+            "minecraft:physics": {
+                "has_collision": true,
+                "has_gravity": true
+            },
+            "minecraft:leashable": {
+                "soft_distance": 10,
+                "hard_distance": 10,
+                "max_distance": 50.0,
+                "can_be_stolen": false
+            },
+            "minecraft:is_stackable": {
+                "value": true
+            },
+            "minecraft:scale": {
+                "value": 1.0
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:collision_box": {
+                "width": 3,
+                "height": 10
+            },
+            "minecraft:rail_sensor": {
+                "eject_on_activate": true
+            },
+            "minecraft:rideable": {
+                "priority": 0,
+                "seat_count": 1,
+                "interact_text": "Drive",
+                "pull_in_entities": true,
+                "seats": [
+                    {
+                        "position": [
+                            0.0,
+                            10.0,
+                            0.0
+                        ],
+                        "min_rider_count": 0,
+                        "max_rider_count": 0,
+                        "rotate_rider_by": 180,
+                        "lock_rider_rotation": 90
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:navigation.walk": {
+                "is_amphibious": true,
+                "can_pass_doors": true,
+                "can_walk": true,
+                "can_break_doors": true,
+                "can_sink": false
+            }
+        }
+    }
+}

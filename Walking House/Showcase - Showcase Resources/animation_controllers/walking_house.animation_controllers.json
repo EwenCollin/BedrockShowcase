@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.walking_house.move": {
+        "initial_state": "default_state",
+        "states": {
+          "default_state": {
+            "animations": [
+              {
+                "move": "query.modified_move_speed"
+              }
+            ],
+            "blend_transition": 0.3
+          }
+        }
+      }
+    }
+  }
