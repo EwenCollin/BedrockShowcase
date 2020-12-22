@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ewen:funk_minecart",
+            "spawn_egg": {
+                "texture": "spawn_egg_funk_minecart",
+                "texture_index": 0
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "geometry": {
+                "default": "geometry.funk_minecart"
+            },
+            "textures": {
+                "default": "textures/entity/funk_minecart"
+            },
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "animations": {
+                "move": "animation.funk_minecart.move",
+                "move_controller": "controller.animation.funk_minecart.move"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ],
+                "animate": [
+                    "move_controller"
+                ]
+            },
+            "particle_effects": {
+                "steam_main": "ewen:steam_main"
+            }
+        }
+    }
+}
